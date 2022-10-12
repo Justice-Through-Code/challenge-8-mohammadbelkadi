@@ -1,7 +1,6 @@
 
 # You are working on a library management system, here are the list books at the library
 
-from tabnanny import check
 
 
 books = [
@@ -12,10 +11,10 @@ books = [
 # 1.1 TODO: Create a function named 'available_books' to print the books list-- one book title on each line
 # Parameters: Not needed for this function
 # Return: Not needed for this function
-def availble_books ():
+def available_books ():
     for book in books:
         print(book)
-availble_books()
+available_books()
 
 # 1.2 TODO: Run the 'available_books' function
 
@@ -32,7 +31,7 @@ def check_out (book_title:str):
 check_out('SAPIENS')
 
 # 1.5 TODO: Run the 'available_books' function again to see if the book was checked out
-availble_books()
+available_books()
 
 print('-----------------------')
 # 1.6 TODO: Create a function 'check_in' that adds a book to the end of the books list
@@ -45,7 +44,7 @@ def check_in(book_title:str):
 check_in('SAPIENS')
 
 # 1.8 TODO: Run the 'available_books' function to see if the book was checked in
-availble_books()
+available_books()
 
 print('-----------------------')
 # 1.9 TODO: Create a function 'search_by_name' that prints 'Available' if exists in books list, 'Not Available' if it doesn't.
@@ -53,9 +52,9 @@ print('-----------------------')
 # Return: Not needed for this function
 def search_by_name(book_title):
     if book_title in books:
-        print("availble")
+        print("Available")
     else: 
-        print('not availble')
+        print('Not Available')
 
 # 1.10 TODO: Search for the book 'JUST MERCY'
 search_by_name('JUST MERCY')
